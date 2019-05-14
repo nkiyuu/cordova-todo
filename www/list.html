@@ -1,16 +1,20 @@
-<div>
+<ons-page id="list.html">
   <ons-toolbar>
     <div class="left"></div>
-    <div class="center">タイトル</div>
+    <div class="center">TODO LIST</div>
     <div class="right"></div>
   </ons-toolbar>
-  <ons-page id="list.html">
-    <ons-list>
-      <ons-list-header>一覧のタイトル</ons-list-header>
-      <ons-list-item>1つめ</ons-list-item>
-      <ons-list-item>2つめ</ons-list-item>
-      <ons-list-item>3つめ</ons-list-item>
-      <ons-list-item modifier="chevron" tappable>Item</ons-list-item>
-    </ons-list>
-  </ons-page>
-</div>
+  <ons-list id="list"> </ons-list>
+
+  <ons-bottom-toolbar>
+    <ons-input
+      id="input-title"
+      class="input-title"
+      placeholder="What to do ?"
+      underline="false"
+    ></ons-input>
+    <ons-button id="register-button" modifier="quiet">
+      <ons-icon icon="fa-check"></ons-icon>
+    </ons-button>
+  </ons-bottom-toolbar>
+</ons-page>

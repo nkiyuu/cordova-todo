@@ -16,6 +16,8 @@ var app = {
         });
       } else if (page.id === 'sqltest.html') {
         jsSqltest.init(page);
+      } else if (page.id === 'list.html') {
+        jsList.init(page);
       }
     });
   },
